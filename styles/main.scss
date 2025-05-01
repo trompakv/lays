@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+$l_blue: #80e2ff;
+$l_yellow: #ffd36a;
+$black: #182327;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin heading1($color: $black) {
+    font-family: "Sentient-Bold";
+    font-size: 4.3rem;
+    color: $color;
+    line-height: 4.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+@mixin heading2($color: $black) {
+    font-family: "Sentient-Bold";
+    font-size: 2.6rem;
+    color: $color;
+    line-height: 2.65rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+@mixin heading3($color: $black) {
+    font-family: "Sentient-Bold";
+    font-size: 1.3rem;
+    color: $color;
+    line-height: 1.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+
+@mixin heading3-bold($color: $black) {
+    font-family: "Manrope";
+    font-size: 1.3rem;
+    color: $color;
+    line-height: 1.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+@mixin heading3-semi($color: $black) {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: $color;
+    line-height: 1.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+
+@mixin heading4($color: $black) {
+    font-family: "Manrope";
+    font-size: 1.2rem;
+    color: $color;
+    line-height: 1.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+
+@mixin button1($color: $black) {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 1rem;
+    color: $color;
+    line-height: 1.3rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+@mixin button2($color: $black) {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: $color;
+    line-height: 1.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+
+@mixin paragraph1($color: $black) {
+    font-family: "Manrope";
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: $color;
+    line-height: 1.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+@mixin paragraph2($color: $black) {
+    font-family: "Manrope";
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: $color;
+    line-height: 1.35rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+@mixin paragraph3($color: $black) {
+    font-family: "Manrope";
+    font-weight: 300;
+    font-size: 1rem;
+    color: $color;
+    line-height: 1.3rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+@mixin paragraph4($color: $black) {
+    font-family: "Manrope";
+    font-weight: 300;
+    font-size: 0.85rem;
+    color: $color;
+    line-height: 1.3rem;
+    letter-spacing: 0%;
+
+    margin: 0;
+}
+
+h1 {
+    @include heading1();
+}

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Sentient-Bold";
+  font-size: 4.3rem;
+  color: #182327;
+  line-height: 4.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */
