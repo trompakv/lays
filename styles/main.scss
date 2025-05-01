@@ -129,6 +129,134 @@ $black: #182327;
     margin: 0;
 }
 
-h1 {
-    @include heading1();
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+
+    &__logo {
+        width: 40px;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+
+            gap: 42px;
+
+            &__li {
+                &__a {
+                    @include paragraph3();
+                }
+            }
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 22px;
+
+        &__search {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 15px 92px 15px 14px;
+
+            gap: 10px;
+
+            border: 1px solid #d8e0e2;
+            border-radius: 8px;
+
+            &__input {
+                @include paragraph4();
+                border: none;
+                outline: none;
+
+                &::placeholder {
+                    @include paragraph4(#cacaca);
+                }
+            }
+        }
+
+        &__account {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__icon {
+                width: 22px;
+                height: 22px;
+                padding: 15px;
+                background: $black;
+                border-radius: 50px;
+            }
+            &__signup {
+                @include button1(#fff);
+
+                padding: 12px 24px;
+                background: $black;
+
+                border-radius: 25px;
+
+                border: none;
+                outline: none;
+
+                margin-left: 22px;
+            }
+        }
+    }
+}
+
+.hero {
+    background: url(./../assets/hero-bg.png) center / cover no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__right {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 37px;
+        }
+
+        &__right__title {
+            @include heading1();
+        }
+
+        &__right__description {
+            @include paragraph1();
+        }
+
+        &__left {
+            & img {
+                width: 500px;
+            }
+        }
+    }
 }

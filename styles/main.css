@@ -4,11 +4,150 @@
   padding: 0;
 }
 
-h1 {
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+.header__logo {
+  width: 40px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__nav__ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 42px;
+}
+.header__nav__ul__li__a {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.header__left__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 92px 15px 14px;
+  gap: 10px;
+  border: 1px solid #d8e0e2;
+  border-radius: 8px;
+}
+.header__left__search__input {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+.header__left__search__input::-moz-placeholder {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #cacaca;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.header__left__search__input::placeholder {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #cacaca;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.header__left__account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__left__account__icon {
+  width: 22px;
+  height: 22px;
+  padding: 15px;
+  background: #182327;
+  border-radius: 50px;
+}
+.header__left__account__signup {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  padding: 12px 24px;
+  background: #182327;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin-left: 22px;
+}
+
+.hero {
+  background: url(./../assets/hero-bg.png) center/cover no-repeat;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__content__right {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 37px;
+}
+.hero__content__right__title {
   font-family: "Sentient-Bold";
   font-size: 4.3rem;
   color: #182327;
   line-height: 4.35rem;
   letter-spacing: 0%;
   margin: 0;
+}
+.hero__content__right__description {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #182327;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.hero__content__left img {
+  width: 500px;
 }/*# sourceMappingURL=main.css.map */
