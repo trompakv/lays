@@ -39,6 +39,7 @@ $black: #182327;
 
 @mixin heading3-bold($color: $black) {
     font-family: "Manrope";
+    font-weight: 700;
     font-size: 1.3rem;
     color: $color;
     line-height: 1.35rem;
@@ -76,6 +77,8 @@ $black: #182327;
     letter-spacing: 0%;
 
     margin: 0;
+
+    cursor: pointer;
 }
 @mixin button2($color: $black) {
     font-family: "Manrope";
@@ -86,6 +89,8 @@ $black: #182327;
     letter-spacing: 0%;
 
     margin: 0;
+
+    cursor: pointer;
 }
 
 @mixin paragraph1($color: $black) {
@@ -224,38 +229,147 @@ $black: #182327;
     }
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 150px;
+}
+
 .hero {
     background: url(./../assets/hero-bg.png) center / cover no-repeat;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px 0 20px 0;
 
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        &__right {
+        &__left {
             display: flex;
             align-items: start;
             justify-content: center;
             flex-direction: column;
 
             gap: 37px;
+
+            &__title {
+                @include heading1();
+            }
+
+            &__description {
+                @include paragraph1();
+                width: 560px;
+            }
+            &__button {
+                @include button1(#fff);
+                border-radius: 8px;
+                border: none;
+                background: $black;
+                padding: 15px 36px;
+            }
         }
 
-        &__right__title {
-            @include heading1();
-        }
-
-        &__right__description {
-            @include paragraph1();
-        }
-
-        &__left {
+        &__right {
             & img {
-                width: 500px;
+                width: 495px;
+                height: 500px;
+                position: relative;
+                top: 25px;
+                left: 70px;
+            }
+        }
+    }
+}
+
+.rating {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+
+    & .section__title {
+        @include heading2();
+        width: 650px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 130px;
+
+        & > img {
+            width: 550px;
+        }
+
+        .card__info {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+
+            &__title {
+                @include heading3();
+            }
+
+            &__stars {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+            }
+
+            &__price {
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+
+                & span:nth-child(1) {
+                    @include paragraph3();
+                }
+                & span:nth-child(2) {
+                    @include heading3-bold(#000);
+                }
+            }
+
+            &__description {
+                @include paragraph3();
+
+                line-height: 150%;
+            }
+
+            &__buttons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin-top: 10px;
+
+                gap: 28px;
+
+                &__button__buy-now {
+                    @include button1(#fff);
+                    border-radius: 8px;
+                    border: none;
+                    background: $black;
+                    padding: 15px 36px;
+                }
+                &__button__see-more {
+                    @include button1(#000);
+                    border: none;
+                    padding: 15px 36px;
+                    background: transparent;
+                }
             }
         }
     }

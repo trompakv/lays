@@ -104,6 +104,7 @@
   line-height: 1.3rem;
   letter-spacing: 0%;
   margin: 0;
+  cursor: pointer;
   padding: 12px 24px;
   background: #182327;
   border-radius: 25px;
@@ -112,26 +113,35 @@
   margin-left: 22px;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 150px;
+}
+
 .hero {
   background: url(./../assets/hero-bg.png) center/cover no-repeat;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px 0 20px 0;
 }
 .hero__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.hero__content__right {
+.hero__content__left {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
   gap: 37px;
 }
-.hero__content__right__title {
+.hero__content__left__title {
   font-family: "Sentient-Bold";
   font-size: 4.3rem;
   color: #182327;
@@ -139,7 +149,7 @@
   letter-spacing: 0%;
   margin: 0;
 }
-.hero__content__right__description {
+.hero__content__left__description {
   font-family: "Manrope";
   font-weight: 300;
   font-size: 1.2rem;
@@ -147,7 +157,142 @@
   line-height: 1.35rem;
   letter-spacing: 0%;
   margin: 0;
+  width: 560px;
 }
-.hero__content__left img {
-  width: 500px;
+.hero__content__left__button {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background: #182327;
+  padding: 15px 36px;
+}
+.hero__content__right img {
+  width: 495px;
+  height: 500px;
+  position: relative;
+  top: 25px;
+  left: 70px;
+}
+
+.rating {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.rating .section__title {
+  font-family: "Sentient-Bold";
+  font-size: 2.6rem;
+  color: #182327;
+  line-height: 2.65rem;
+  letter-spacing: 0%;
+  margin: 0;
+  width: 650px;
+}
+.rating__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+}
+.rating__card > img {
+  width: 550px;
+}
+.rating__card .card__info {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.rating__card .card__info__title {
+  font-family: "Sentient-Bold";
+  font-size: 1.3rem;
+  color: #182327;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.rating__card .card__info__stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.rating__card .card__info__price {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.rating__card .card__info__price span:nth-child(1) {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.rating__card .card__info__price span:nth-child(2) {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #000;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.rating__card .card__info__description {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #182327;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  line-height: 150%;
+}
+.rating__card .card__info__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 28px;
+}
+.rating__card .card__info__buttons__button__buy-now {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background: #182327;
+  padding: 15px 36px;
+}
+.rating__card .card__info__buttons__button__see-more {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  padding: 15px 36px;
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */
