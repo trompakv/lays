@@ -14,31 +14,33 @@
 
 <body>
     <header class="header container">
-        <img src="./assets/logo.png" alt="logo" class="header__logo">
+        <a href="/#">
+            <img src="./assets/logo.png" alt="logo" class="header__logo">\
+        </a>
         <nav class="header__nav">
             <ul class="header__nav__ul">
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a">
+                    <a class="header__nav__ul__li__a" href="/">
                         Products
                     </a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a">
+                    <a class="header__nav__ul__li__a" href="/">
                         About Us
                     </a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a">
+                    <a class="header__nav__ul__li__a" href="/">
                         Videos
                     </a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a">
+                    <a class="header__nav__ul__li__a" href="/">
                         Recipes
                     </a>
                 </li>
                 <li class="header__nav__ul__li">
-                    <a class="header__nav__ul__li__a">
+                    <a class="header__nav__ul__li__a" href="/">
                         Where to Buy
                     </a>
                 </li>
@@ -86,21 +88,37 @@
                 <img src="./assets/2section-chips.png" alt="chips">
                 <div class="card__info">
                     <h3 class="card__info__title">LAY'S® BLT Flavored</h3>
-                    <div class="card__info__stars">
-                        <img src="./assets/icons/star.svg" alt="star">
-                        <img src="./assets/icons/star.svg" alt="star">
-                        <img src="./assets/icons/star.svg" alt="star">
-                        <img src="./assets/icons/star.svg" alt="star">
-                        <img src="./assets/icons/star.svg" alt="star">
-                    </div>
+
+                    <ul class="card__info__stars">
+                        <li>
+                            <img src="./assets/icons/star.svg" alt="star">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/star.svg" alt="star">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/star.svg" alt="star">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/star.svg" alt="star">
+                        </li>
+                        <li>
+                            <img src="./assets/icons/star.svg" alt="star">
+                        </li>
+                    </ul>
+
                     <div class="card__info__price">
                         <span>Price</span>
                         <span>$3.93</span>
                     </div>
-                    <div class="card__info__description">It all starts with farm-grown potatoes, cooked and seasoned to
-                        perfection. Then we add the sweet taste of honey and the spicy kick of BBQ sauce. So every LAY'S
+
+                    <div class="card__info__description">It all starts with farm-grown potatoes, cooked and seasoned
+                        to
+                        perfection. Then we add the sweet taste of honey and the spicy kick of BBQ sauce. So every
+                        LAY'S
                         potato chip is perfectly crispy and delicious. Happiness in Every Bite.
                     </div>
+
                     <div class="card__info__buttons">
                         <button class="card__info__buttons__button__buy-now">
                             Buy Now
@@ -111,7 +129,22 @@
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section class="popular container">
+            <div class="popular__left">
+                <div class="popular__left__card"><img src="./assets/popular-chips1.png" alt="chips">
+                    <h3>LAY’S® Wavy Ondulees Salt & Vinegar</h3>
+                    <span>> Play Video</span>
+                </div>
+            </div>
+            <div class="popular__right">
+                <h2 class="section__title">Our Popular Crisps</h2>
+                <div class="popular__right__card"><img src="./assets/popular-chips2.png" alt="chips">
+                    <h3>LAY’S® Beers and Cigar</h3>
+                    <span>> Play Video</span>
+                </div>
+            </div>
         </section>
     </main>
 </body>

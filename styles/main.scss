@@ -7,6 +7,8 @@ $black: #182327;
 * {
     margin: 0;
     padding: 0;
+
+    text-decoration: none;
 }
 
 @mixin heading1($color: $black) {
@@ -325,6 +327,8 @@ main {
                 align-items: center;
                 justify-content: center;
                 gap: 4px;
+
+                list-style: none;
             }
 
             &__price {
@@ -370,6 +374,95 @@ main {
                     padding: 15px 36px;
                     background: transparent;
                 }
+            }
+        }
+    }
+}
+
+.popular {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+
+    &__left {
+        &__card {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+
+            & h3 {
+                @include heading3-semi();
+            }
+
+            & span {
+                @include paragraph3(#5d696d);
+            }
+
+            & img {
+                width: 570px;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 70px;
+
+        .section__title {
+            @include heading2();
+        }
+
+        &__card {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+
+            & h3 {
+                @include heading3-semi();
+            }
+
+            & span {
+                @include paragraph3(#5d696d);
+            }
+
+            & img {
+                width: 570px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .header {
+        &__nav {
+            display: none;
+        }
+        &__left {
+            display: none;
+        }
+    }
+
+    .hero {
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &__right {
+                order: -1;
             }
         }
     }

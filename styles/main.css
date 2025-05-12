@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .container {
@@ -226,6 +227,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 4px;
+  list-style: none;
 }
 .rating__card .card__info__price {
   display: flex;
@@ -295,4 +297,103 @@ main {
   border: none;
   padding: 15px 36px;
   background: transparent;
+}
+
+.popular {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+}
+.popular__left__card {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.popular__left__card h3 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #182327;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__left__card span {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #5d696d;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__left__card img {
+  width: 570px;
+}
+.popular__right {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.popular__right .section__title {
+  font-family: "Sentient-Bold";
+  font-size: 2.6rem;
+  color: #182327;
+  line-height: 2.65rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__right__card {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.popular__right__card h3 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #182327;
+  line-height: 1.35rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__right__card span {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-size: 1rem;
+  color: #5d696d;
+  line-height: 1.3rem;
+  letter-spacing: 0%;
+  margin: 0;
+}
+.popular__right__card img {
+  width: 570px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__left {
+    display: none;
+  }
+  .hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero__content__right {
+    order: -1;
+  }
 }/*# sourceMappingURL=main.css.map */
