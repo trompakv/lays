@@ -386,6 +386,16 @@ main {
     gap: 30px;
 
     &__left {
+        .section__title {
+            @include heading2();
+            display: none;
+        }
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+
         &__card {
             display: flex;
             align-items: start;
@@ -441,8 +451,21 @@ main {
 }
 
 @media screen and (max-width: 375px) {
+    html {
+        font-size: 13px;
+    }
+
+    main {
+        gap: 100px;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
     .container {
-        max-width: 375px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .header {
@@ -461,9 +484,52 @@ main {
             justify-content: center;
             flex-direction: column;
 
+            &__left {
+                &__title {
+                    width: 340px;
+                    font-size: 3.7rem;
+                    line-height: 3.8rem;
+                }
+                &__description {
+                    width: 340px;
+                }
+            }
+
             &__right {
                 order: -1;
+                // width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                & img {
+                    width: 260px;
+                    height: 300px;
+                    position: relative;
+
+                    top: 50%;
+                    left: 50%;
+
+                    transform: translate(-50%, 0%);
+                }
             }
         }
+    }
+
+    .rating {
+        .section__title {
+            width: 350px;
+        }
+        &__card {
+            flex-direction: column;
+        }
+    }
+
+    .popular {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
