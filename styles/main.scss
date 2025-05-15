@@ -148,6 +148,10 @@ $black: #182327;
     width: 100%;
     padding: 30px 0;
 
+    &__menu {
+        display: none;
+    }
+
     &__logo {
         width: 40px;
     }
@@ -236,7 +240,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 150px;
 }
 
 .hero {
@@ -290,6 +293,7 @@ main {
 }
 
 .rating {
+    margin-top: 150px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -380,6 +384,7 @@ main {
 }
 
 .popular {
+    margin-top: 150px;
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -450,13 +455,154 @@ main {
     }
 }
 
+.customer {
+    margin-top: 150px;
+    width: 100%;
+    background: $l_blue;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 75px 0;
+        gap: 152px;
+    }
+
+    &__left {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 75px;
+
+        .section__title {
+            @include heading2();
+        }
+
+        &__comment {
+            @include paragraph1();
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        &__author {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 6px;
+
+            & span:nth-child(1) {
+                @include heading3-semi();
+            }
+            & span:nth-child(2) {
+                @include paragraph3;
+            }
+        }
+    }
+
+    &__right {
+        & img {
+            width: 470px;
+            height: 552px;
+        }
+    }
+}
+
+.find {
+    width: 100%;
+    background: url(../assets/find-bg.png) center / cover no-repeat, $l_yellow;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 100px 0;
+    }
+
+    & .section__title {
+        @include heading2();
+        width: 470px;
+        text-align: center;
+        line-height: 120%;
+    }
+
+    &__text {
+        @include paragraph1();
+        width: 500px;
+        text-align: center;
+        line-height: 130%;
+    }
+
+    &__button {
+        @include button1(#fff);
+        border-radius: 8px;
+        border: none;
+        background: $black;
+        padding: 15px 36px;
+    }
+}
+
+.footer {
+    width: 100%;
+    background: #fff7e3;
+
+    &__content {
+        padding: 125px 0;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    &__logo {
+        & img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 35px;
+
+        & a {
+            @include paragraph3();
+            font-weight: 500;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 15px;
+
+        & span {
+            @include heading3-semi();
+        }
+    }
+
+    &__copyright {
+        @include paragraph2();
+        font-weight: 500;
+    }
+}
+
 @media screen and (max-width: 375px) {
     html {
         font-size: 13px;
-    }
-
-    main {
-        gap: 100px;
     }
 
     * {
@@ -469,11 +615,15 @@ main {
     }
 
     .header {
+        padding: 10px 0;
         &__nav {
             display: none;
         }
         &__left {
             display: none;
+        }
+        &__menu {
+            display: block;
         }
     }
 
@@ -518,6 +668,7 @@ main {
     }
 
     .rating {
+        margin-top: 100px;
         .section__title {
             width: 350px;
         }
@@ -527,9 +678,32 @@ main {
     }
 
     .popular {
+        margin-top: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .customer {
+        margin-top: 100px;
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 40px;
+        }
+        &__left {
+            gap: 30px;
+
+            &__author {
+                margin-top: 15px;
+            }
+        }
+        &__right {
+            order: -1;
+        }
     }
 }
